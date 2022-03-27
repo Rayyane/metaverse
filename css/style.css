@@ -72,7 +72,7 @@ figure figcaption {
 }
 
 .site-section-1 {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 100%), url(../img/section-1-bg.jpg) no-repeat center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0,0,0,0.8) 50%, rgba(0, 0, 0, 1) 100%), url(../img/section-1-bg.jpg) no-repeat center;
   min-height: 100vh;
 }
 
@@ -140,8 +140,8 @@ figure figcaption {
 }
 */
 .site-section-2 {
-  padding: 7rem 0;
-  background: linear-gradient(to bottom, rgb(0, 34, 102) 0%, rgb(0, 9, 26) 100%);
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(23, 2, 3, 0.9) 100%), url(../img/section-1-bg.jpg) no-repeat center center/cover;
 }
 
 .site-section-2 .section-desc {
@@ -152,18 +152,319 @@ figure figcaption {
   -webkit-text-fill-color: transparent;
 }
 
+.site-section-2 .concept-desc {
+  font-size: 36px;
+  color: #fbd0d2;
+  text-shadow: 0 0 0.6rem #fde7e8, 0 0 1.5rem #f47176,
+    -0.2rem 0.1rem 1rem #f47176, 0.2rem 0.1rem 1rem #f47176,
+    0 -0.5rem 2rem #ed1c24, 0 0.5rem 3rem #ed1c24;
+  margin-bottom: 20px;
+}
+
 .site-section-2 .section-heading {
   font-size: 3rem;
   font-weight: 700;
-  background: linear-gradient(-45deg, #fff, #3db3c5);
+  background: linear-gradient(-45deg, #fff, #eb141f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: glow_n 1s ease-in-out infinite alternate;
+  /*animation: glow_n 1s ease-in-out infinite alternate;*/
+}
+
+.example1 {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+  margin: 1rem auto;
+}
+.example1 > .block {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  perspective: 1000px;
+}
+.example1 > .block:nth-of-type(1) {
+  height: 80%;
+  top: 10%;
+  left: 17%;
+  width: 15%;
+}
+.example1 > .block:nth-of-type(2) {
+  top: 0;
+  left: 35%;
+}
+.example1 > .block:nth-of-type(3) {
+  height: 80%;
+  top: 10%;
+  left: 64%;
+  width: 15%;
+}
+.example1 > .block > .side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../img/metatars.jpg');
+  background-size: auto 100%;
+  box-shadow: -1vw 0.5vw 1vw rgba(0, 0, 0, 0.3);
+}
+.example1 > .block > .side.-main {
+  height: 100%;
+  width: 100%;
+  transform: rotateY(30deg);
+  transform-origin: 0 50%;
+}
+.example1 > .block > .side.-left {
+  height: 100%;
+  width: 20%;
+  transform-origin: 0 50%;
+  transform: rotateY(-60deg) translateX(-100%);
+  filter: brightness(40%);
+}
+.example1 > .block:nth-of-type(1) > .side.-main {
+  background-position: 4% 50%;
+  background-size: auto 130%;
+}
+.example1 > .block:nth-of-type(1) > .side.-left {
+  background-position: 0 50%;
+  background-size: auto 130%;
+}
+.example1 > .block:nth-of-type(2) > .side.-main {
+  background-position: 50% 0;
+}
+.example1 > .block:nth-of-type(2) > .side.-left {
+  background-position: 28.5% 0;
+}
+.example1 > .block:nth-of-type(3) > .side.-main {
+  background-position: 96% 50%;
+  background-size: auto 130%;
+}
+.example1 > .block:nth-of-type(3) > .side.-left {
+  background-position: 78% 50%;
+  background-size: auto 130%;
+}
+
+/*example 2 begins */
+
+.example2 {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+  margin: 1rem auto;
+}
+.example2 > .block {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  perspective: 1000px;
+}
+.example2 > .block:nth-of-type(1) {
+  height: 80%;
+  top: 10%;
+  left: 17%;
+  width: 15%;
+}
+.example2 > .block:nth-of-type(2) {
+  top: 0;
+  left: 35%;
+}
+.example2 > .block:nth-of-type(3) {
+  height: 80%;
+  top: 10%;
+  left: 64%;
+  width: 15%;
+}
+.example2 > .block > .side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../img/cyber_shiba_n.png');
+  background-size: auto 100%;
+  box-shadow: -1vw 0.5vw 1vw rgba(0, 0, 0, 0.3);
+}
+.example2 > .block > .side.-main {
+  height: 100%;
+  width: 100%;
+  transform: rotateY(30deg);
+  transform-origin: 0 50%;
+}
+.example2 > .block > .side.-left {
+  height: 100%;
+  width: 20%;
+  transform-origin: 0 50%;
+  transform: rotateY(-60deg) translateX(-100%);
+  filter: brightness(40%);
+}
+.example2 > .block:nth-of-type(1) > .side.-main {
+  background-position: 4% 50%;
+  background-size: auto 130%;
+}
+.example2 > .block:nth-of-type(1) > .side.-left {
+  background-position: 0 50%;
+  background-size: auto 130%;
+}
+.example2 > .block:nth-of-type(2) > .side.-main {
+  background-position: 50% 0;
+}
+.example2 > .block:nth-of-type(2) > .side.-left {
+  background-position: 28.5% 0;
+}
+.example2 > .block:nth-of-type(3) > .side.-main {
+  background-position: 96% 50%;
+  background-size: auto 130%;
+}
+.example2 > .block:nth-of-type(3) > .side.-left {
+  background-position: 78% 50%;
+  background-size: auto 130%;
+}
+
+/* example 3 begins */
+.example3 {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+  margin: 1rem auto;
+}
+.example3 > .block {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  perspective: 1000px;
+}
+.example3 > .block:nth-of-type(1) {
+  height: 80%;
+  top: 10%;
+  left: 17%;
+  width: 15%;
+}
+.example3 > .block:nth-of-type(2) {
+  top: 0;
+  left: 35%;
+}
+.example3 > .block:nth-of-type(3) {
+  height: 80%;
+  top: 10%;
+  left: 64%;
+  width: 15%;
+}
+.example3 > .block > .side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../img/fat_cat.jpg');
+  background-size: auto 100%;
+  box-shadow: -1vw 0.5vw 1vw rgba(0, 0, 0, 0.3);
+}
+.example3 > .block > .side.-main {
+  height: 100%;
+  width: 100%;
+  transform: rotateY(30deg);
+  transform-origin: 0 50%;
+}
+.example3 > .block > .side.-left {
+  height: 100%;
+  width: 20%;
+  transform-origin: 0 50%;
+  transform: rotateY(-60deg) translateX(-100%);
+  filter: brightness(40%);
+}
+.example3 > .block:nth-of-type(1) > .side.-main {
+  background-position: 4% 50%;
+  background-size: auto 130%;
+}
+.example3 > .block:nth-of-type(1) > .side.-left {
+  background-position: 0 50%;
+  background-size: auto 130%;
+}
+.example3 > .block:nth-of-type(2) > .side.-main {
+  background-position: 50% 0;
+}
+.example3 > .block:nth-of-type(2) > .side.-left {
+  background-position: 28.5% 0;
+}
+.example3 > .block:nth-of-type(3) > .side.-main {
+  background-position: 96% 50%;
+  background-size: auto 130%;
+}
+.example3 > .block:nth-of-type(3) > .side.-left {
+  background-position: 78% 50%;
+  background-size: auto 130%;
+}
+
+/* example 4 begins */
+.example4 {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+  margin: 1rem auto;
+}
+.example4 > .block {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  perspective: 1000px;
+}
+.example4 > .block:nth-of-type(1) {
+  height: 80%;
+  top: 10%;
+  left: 17%;
+  width: 15%;
+}
+.example4 > .block:nth-of-type(2) {
+  top: 0;
+  left: 35%;
+}
+.example4 > .block:nth-of-type(3) {
+  height: 80%;
+  top: 10%;
+  left: 64%;
+  width: 15%;
+}
+.example4 > .block > .side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../img/doi.png');
+  background-size: auto 100%;
+  box-shadow: -1vw 0.5vw 1vw rgba(0, 0, 0, 0.3);
+}
+.example4 > .block > .side.-main {
+  height: 100%;
+  width: 100%;
+  transform: rotateY(30deg);
+  transform-origin: 0 50%;
+}
+.example4 > .block > .side.-left {
+  height: 100%;
+  width: 20%;
+  transform-origin: 0 50%;
+  transform: rotateY(-60deg) translateX(-100%);
+  filter: brightness(40%);
+}
+.example4 > .block:nth-of-type(1) > .side.-main {
+  background-position: 4% 50%;
+  background-size: auto 130%;
+}
+.example4 > .block:nth-of-type(1) > .side.-left {
+  background-position: 0 50%;
+  background-size: auto 130%;
+}
+.example4 > .block:nth-of-type(2) > .side.-main {
+  background-position: 50% 0;
+}
+.example4 > .block:nth-of-type(2) > .side.-left {
+  background-position: 28.5% 0;
+}
+.example4 > .block:nth-of-type(3) > .side.-main {
+  background-position: 96% 50%;
+  background-size: auto 130%;
+}
+.example4 > .block:nth-of-type(3) > .side.-left {
+  background-position: 78% 50%;
+  background-size: auto 130%;
 }
 
 .site-section-3 {
   padding: 2rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 1) 100%), url(../img/services-bg-n.jpg) no-repeat ;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(23, 2, 3, 1) 40%, rgba(0, 0, 0, 1) 100%);
 }
 
 .site-section-3 .section-heading {
@@ -184,20 +485,25 @@ figure figcaption {
 }
 
 .site-section-3 p {
-  background: linear-gradient(45deg, #fff, #ffcccc);
+  background: linear-gradient(45deg, #fff, #ff9999);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .site-section-4 {
   padding: 2rem 0;/*linear-gradient(to bottom, rgba(0, 9, 26, 1) 0%, rgba(0, 34, 102, 0.8) 100%, url(../img/hero-bg.jpg);*/
-  background: linear-gradient(to bottom, rgba(0, 9, 26, 1) 0%, rgba(0, 34, 102, 1) 100%);
+  background: linear-gradient(to bottom, rgba(23, 2, 3, 1) 0%, rgb(0, 0, 0) 100%);
+}
+
+.site-section-4 img {
+  width: 150%;
+  margin-top: -30%;
 }
 
 .site-section-4 .tokenomics {
   font-size: 3rem;
   font-weight: 700;
-  background: linear-gradient(-45deg, #fff, #3db3c5);
+  background: linear-gradient(-45deg, #fff, #eb141f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -205,30 +511,29 @@ figure figcaption {
 .site-section-4 .section-desc {
   font-size: 1.1rem;
   font-weight: 500;
-  background: linear-gradient(-45deg, #3db3c5, #fff);
+  background: linear-gradient(-45deg, #eb141f, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .site-section-5 {
   padding: 3rem 0;
-  background: linear-gradient(to bottom, rgba(0, 34, 102, 1) 0%, rgba(179, 204, 255, 1) 100%);
+  background: linear-gradient(to bottom, rgb(0,0,0) 0%, rgba(47, 4, 6, 1) 100%);
 }
 
 .site-section-5 .section-heading {
   font-size: 3rem;
   font-weight: 700;
-  background: linear-gradient(-45deg, #fff, #3db3c5);
+  background: linear-gradient(-45deg, #fff, #eb141f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: glow_n 1s ease-in-out infinite alternate;
 }
 
 
 
 .site-section-6 {
   padding: 7rem 0;
-  background: linear-gradient(to bottom, rgb(179, 204, 255) 0%, rgb(0, 34, 102) 100%);
+  background: linear-gradient(to bottom, rgb(47, 4, 6) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 .site-section-6 .section-heading {
@@ -238,6 +543,14 @@ figure figcaption {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: glow_n1 1s ease-in-out infinite alternate;
+}
+
+.site-section-6 .section-desc {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #fbd0d2, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .site-section-6 .section-desc-1 {
@@ -256,6 +569,110 @@ figure figcaption {
   -webkit-text-fill-color: transparent;
 }
 
+.progress-1 {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 80px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 30px;
+  width: 100%;
+}
+
+.progress-value-1 {
+  animation: load1 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 80px;
+  background: linear-gradient(45deg, #fff, #8d0c13);
+  height: 20px;
+  width: 0;
+}
+
+@keyframes load1 {
+  0% { width: 0; }
+  100% { width: 93%; }
+}
+
+.progress-2 {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 80px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 30px;
+  width: 100%;
+}
+
+.progress-value-2 {
+  animation: load2 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 80px;
+  background: linear-gradient(45deg, #fff, #8d0c13);
+  height: 20px;
+  width: 0;
+}
+
+@keyframes load2 {
+  0% { width: 0; }
+  100% { width: 88%; }
+}
+
+.progress-3 {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 80px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 30px;
+  width: 100%;
+}
+
+.progress-value-3 {
+  animation: load3 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 80px;
+  background: linear-gradient(45deg, #fff, #8d0c13);
+  height: 20px;
+  width: 0;
+}
+
+@keyframes load3 {
+  0% { width: 0; }
+  100% { width: 95%; }
+}
+
+.progress-4 {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 80px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 30px;
+  width: 100%;
+}
+
+.progress-value-4 {
+  animation: load4 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 80px;
+  background: linear-gradient(45deg, #fff, #8d0c13);
+  height: 20px;
+  width: 0;
+}
+
+@keyframes load4 {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
 .section-heading {
   font-size: 3rem;
   font-weight: 700;
@@ -267,19 +684,19 @@ figure figcaption {
 
 @keyframes glow_n {
     from {
-      text-shadow: 0 0 0px #3db3c5;
+      text-shadow: 0 0 0px #eb141f;
     }
     to {
-      text-shadow: 0 0 2px #fff, 0 0 5px #3db3c5;
+      text-shadow: 0 0 2px #fff, 0 0 5px #eb141f;
     }
 }
 
 @keyframes glow_n1 {
     from {
-      text-shadow: 0 0 0px #d8f0f3;
+      text-shadow: 0 0 0px #ffe6e6;
     }
     to {
-      text-shadow: 0 0 2px #fff, 0 0 5px #d8f0f3;
+      text-shadow: 0 0 2px #fff, 0 0 5px #ffe6e6;
     }
 }
 
@@ -373,17 +790,18 @@ figure figcaption {
 /* Step */
 
 .step {
-  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
-  background: rgb(230, 238, 255);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.9);
+  background: rgba(23, 2, 3, 0.1);
   padding: 40px;
   border-radius: 20px;
 }
 
 .step .number {
-  background: linear-gradient(-45deg, #1391a5, #274685);
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(-45deg, #fff, #eb141f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 700;
   letter-spacing: .2rem;
   margin-bottom: 10px;
   display: block;
@@ -392,7 +810,7 @@ figure figcaption {
 .step h3 {
   font-size: 1.5rem;
   font-weight: 500;
-  background: linear-gradient(-45deg, #17474f, #3db3c5);
+  background: linear-gradient(45deg, #fff, #eb141f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -549,7 +967,7 @@ figure figcaption {
 /* CTA Section */
 
 .cta-section {
-  background: linear-gradient(to bottom, rgb(0, 34, 102) 0%, rgb(0, 34, 102) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 100%);
   color: #fff;
 }
 
@@ -1731,7 +2149,7 @@ figure figcaption {
 --------------------------------------------------------------*/
 
 .footer {
-  padding: 5rem 0 2.5rem 0;
+  padding: 1rem 0 0.5rem 0;
 }
 
 .footer h3 {
